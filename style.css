@@ -1,0 +1,151 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-right: 0;
+    color:white;
+    border-radius: 50px;
+    border-color: #20dad8;
+    }
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color:#141a35;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color:white;
+    }
+
+.contenedor{
+    display: flex;
+    flex-direction:row;/*predefinido*/
+    height: 1000px;
+    margin-left: 15px;
+    }
+
+.main{
+    display: grid;
+    flex: 65%;
+    
+
+    }
+
+ .mainmovies img{
+        max-height: 130px;
+        max-width: 100px;
+        height: auto;
+        width: auto;
+        padding:5px;
+    }
+    .sinopsis:hover{
+        background-color: #20dad8;
+        color: black;
+    }
+
+    .secondsection{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        
+    }
+
+ .banner{
+        background-image: url(./assets/fondo1.jpeg);
+        padding-left: 50px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        text-overflow:auto;
+        }
+
+.movies{
+    margin-left: 100px;
+}
+.p{
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.secondary{
+   
+    flex: 35%;
+    text-align: center;
+    margin-right: 10px;
+    
+    }
+.rrss{
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0;
+    padding: 10px;
+    background-color:#20dad8 ;
+    color:black;
+    }
+
+.secondary img{
+    height: 60px;
+    }
+
+.comentarios{
+    text-align:left;
+    overflow: auto; 
+    text-overflow: ellipsis;
+    }
+
+.li{
+    font-size: smaller;
+    }
+.mainmovies img{
+    max-height: 130px;
+    max-width: 100px;
+    height: auto;
+    width: auto;
+    padding:5px;
+}
+.banner{
+    background-image: url(./assets/fondo.jpeg);
+}
+@media  screen and (max-width:480px) {
+    .header{
+        display: flex;
+        margin-inline: 4vh;
+    }
+    .footer-container{
+        display: flex;
+        margin-inline: 4vh;
+        width: 100%;
+        text-align: center;
+        padding: 5%;
+    }
+    .banner{
+        background-image: none;
+    }
+    #C2{
+        display: none;
+    }
+    #tablet,#pc{
+        display:none;
+    }
+    
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    #pc{
+        display: none;
+    }
+
+}
+@media  screen and (max-width:780px){
+    .banner{
+        background-image: none;
+    }
+}
+
